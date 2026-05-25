@@ -1,9 +1,3 @@
-# 🚀 Revision Notes: JavaScript & Node.js
-
-> A quick and beautiful revision guide covering the fundamentals of JavaScript and Node.js.
-
----
-
 # 📌 Introduction to JavaScript
 
 ## 💡 What is JavaScript?
@@ -393,26 +387,3 @@ With JavaScript + Node.js you can build:
 - Full Stack Projects
 - APIs
 - Real-time Apps
-
----
-
-# 📖 Quick Revision Table
-
-| Topic      | Key Point                    |
-| ---------- | ---------------------------- |
-| JavaScript | Dynamic scripting language   |
-| Node.js    | Run JS outside browser       |
-| Variables  | var, let, const              |
-| Data Types | Primitive & Reference        |
-| Functions  | Reusable code blocks         |
-| Arrays     | Store multiple values        |
-| Objects    | Key-value storage            |
-| DSA        | Important for logic building |
-
----
-
-# 🚀 Happy Coding!
-
-```js
-console.log("Keep Learning 🚀");
-```
