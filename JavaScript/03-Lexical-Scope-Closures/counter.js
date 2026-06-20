@@ -1,13 +1,13 @@
-function counter(){
-    let count = 0;
+function counter() {
+  let count = 0;
 
-    return function(){
-        return ++count;
-    }
+  return function () {
+    return ++count;
+  };
 }
 
 const c1 = counter();
-console.log(c1());
-console.log(c1());
-console.log(c1());
-console.log(c1());
+console.log(c1()); // 1
+console.log(c1()); // 2
+console.log(c1()); // 3
+console.log(c1()); // 4

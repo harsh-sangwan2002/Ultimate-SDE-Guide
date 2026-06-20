@@ -1,36 +1,33 @@
-function global(){
-    var g = "global";
-    console.log(g,o,i); // ReferenceError: 'g' is not defined
+function global() {
+  console.log(g, o, i); // ReferenceError: 'o' is not defined
 
-    function outer(){
-        var o = "outer";
-        console.log(g,o,i);
+  function outer() {
+    console.log(g, o, i);
 
-        function inner(){
-            var i = "inner";
-            console.log(g,o,i);
-        }
-        inner();
+    function inner() {
+      console.log(g, o, i);
     }
-    outer();
+    inner();
+  }
+  outer();
 }
 
 // global();
 
-function isHoliday(date){
+function isHoliday(date) {
+  var holidays = ["20-06-2026", "21-06-2026"];
+  var res = "";
 
-    var holidays = ["14/06/2026","15/06/2026"];
-    var result = "";
+  if (holidays.includes(date)) {
+    var logData = "Yes, it's a holiday";
+    res = "Yes";
+  } else {
+    res = "No";
+  }
 
-    if(holidays.includes(date)){
-        var logData = "Yes, it's a holiday";
-        result = "Yes";
-    }
-
-    return {
-        logData,
-        result
-    }
+  return {
+    logData,
+    res,
+  };
 }
-
-console.log(isHoliday("14/06/2026"));
+console.log(isHoliday("22-06-2026"));
