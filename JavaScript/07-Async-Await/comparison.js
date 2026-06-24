@@ -34,21 +34,22 @@ function createDummyPromise(delay, message) {
 // });
 
 // ES6
-// try {
-//     const r1 = await createDummyPromise(20000, "20 sec");
-//     console.log(r1);
+try {
+    // const r1 = await createDummyPromise(20000, "20 sec");
+    // console.log(r1);
 
-//     const r2 = await createDummyPromise(3000, "3 sec");
-//     console.log(r2);
+    // Total waiting time is: 3s + 5s + 1s => 9s
+    const r2 = await createDummyPromise(3000, "3 sec");
+    console.log(r2);
 
-//     const r3 = await createDummyPromise(5000, "5 sec");
-//     console.log(r3);
+    const r3 = await createDummyPromise(5000, "5 sec");
+    console.log(r3);
 
-//     const r4 = await createDummyPromise(1000, "1 sec");
-//     console.log(r4);
-// } catch (err) {
-//     console.log(err);
-// }
+    const r4 = await createDummyPromise(1000, "1 sec");
+    console.log(r4);
+} catch (err) {
+    console.log(err);
+}
 
 // const p1 = createDummyPromise(20000, "20 sec");
 const p2 = createDummyPromise(3000, "3 sec");
@@ -60,6 +61,7 @@ try {
     // const r1 = await p1;
     // console.log(r1);
 
+    // Total waiting time is: 3s + 2s => 5s
     const r2 = await p2;
     console.log(r2);
 
