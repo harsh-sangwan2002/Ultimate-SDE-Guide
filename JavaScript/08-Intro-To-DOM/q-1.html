@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Intro</title>
+    <script src="script.js"></script>
+    <style>
+        .randomNumberContainer {
+            border: 1px solid black;
+            color: green;
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- DOM is nothing but just a tree representation of the HTML code -->
+    <h1 id="heading">DOM</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <div class="container">
+        <div class="parent">
+            <ul>
+                <li>Child 1</li>
+                <li>Child 2</li>
+            </ul>
+        </div>
+    </div>
+    <div class="parent">
+        Some details here
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </div>
+    <div class="randomNumberContainer">
+        <p class="number">0</p>
+    </div>
+
+    <button id="randomButton">Show Random Number</button>
+</body>
+
+<script>
+    var title = "Chirag Goel JS class";
+    let res = 0;
+    // console.log(title);
+    const button = document.querySelector('#randomButton');
+    const number = document.querySelector(".number");
+    const showRandomNumber = () => {
+        res = Math.floor(Math.random() * 1000)
+        number.innerText = res;
+    };
+
+    button.addEventListener('click', showRandomNumber)
+</script>
+
+</html>
