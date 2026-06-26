@@ -1,0 +1,230 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* Static Steel Grey Background */
+    background:
+        radial-gradient(circle at top,
+            rgba(255, 255, 255, 0.08),
+            transparent 40%),
+        linear-gradient(135deg,
+            #23272f,
+            #2c313a,
+            #383f4a,
+            #444d59,
+            #4f5966);
+
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    background: linear-gradient(90deg,
+            #ffffff,
+            #d8b4fe,
+            #93c5fd,
+            #ffffff);
+
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 300%;
+    }
+}
+
+/* Main */
+main {
+    width: min(90%, 500px);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Weather Cards */
+section {
+    padding: 28px;
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35),
+        inset 0 1px rgba(255, 255, 255, 0.08);
+
+    transition: all 0.35s ease;
+}
+
+section:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(147, 197, 253, 0.45);
+
+    box-shadow:
+        0 15px 40px rgba(37, 99, 235, 0.3),
+        0 0 25px rgba(168, 85, 247, 0.25);
+}
+
+section h2 {
+    font-size: 1rem;
+    color: #d8b4fe;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Footer */
+footer {
+    width: min(90%, 500px);
+
+    margin: 40px auto;
+
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Input Box */
+footer input {
+    flex: 1;
+    min-width: 220px;
+
+    padding: 14px 18px;
+
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: white;
+    font-size: 1rem;
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+footer input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+footer input:focus {
+    border-color: #60a5fa;
+
+    box-shadow: 0 0 18px rgba(96, 165, 250, 0.45);
+}
+
+/* Buttons */
+button {
+    padding: 14px 22px;
+
+    border: none;
+    cursor: pointer;
+
+    border-radius: 15px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+/* Search Button */
+.search {
+    background: linear-gradient(135deg,
+            #3b82f6,
+            #8b5cf6);
+}
+
+.search:hover {
+    transform: translateY(-3px);
+
+    filter: brightness(1.1);
+
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Reset Button */
+.reset {
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.reset:hover {
+    background: rgba(255, 255, 255, 0.2);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    section p {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer input,
+    button {
+        width: 100%;
+    }
+}
