@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS Sandbox</title>
-  </head>
-  <body>
-    <h1>HTML & CSS Sandbox - Checkboxes & Radio</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Sandbox</title>
+</head>
+
+<body>
+  <h1>Favourite Programming Languages</h1>
+
+  <form action="">
+    <div>
+      <label for="html">
+        <input type="checkbox" id="html" name="languages" value="html" />HTML
+      </label>
+      <label for="css">
+        <input checked type="checkbox" id="css" name="languages" value="css" />CSS
+      </label>
+      <label for="javascript">
+        <input type="checkbox" id="javascript" name="languages" value="javascript" />JavaScript
+      </label>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Product Size</h2>
+  <form action="">
+    <label for="small">
+      <input type="radio" name="size" value="small" name="small" id="small">Small
+    </label>
+    <label for="medium">
+      <input checked type="radio" name="size" value="medium" name="medium" id="medium">Medium
+    </label>
+    <label for="large">
+      <input type="radio" name="size" value="large" name="large" id="large">Large
+    </label>
+  </form>
+</body>
+
 </html>

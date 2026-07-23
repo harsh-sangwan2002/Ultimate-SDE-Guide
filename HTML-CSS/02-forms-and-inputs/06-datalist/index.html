@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS Sandbox</title>
-  </head>
-  <body>
-    <h1>HTML & CSS Sandbox - Datalist</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Sandbox</title>
+</head>
+
+<body>
+  <h1>HTML & CSS Sandbox - Datalist</h1>
+
+  <!-- General List Select -->
+  <label for="favLanguage">Favourite Programming Language</label>
+  <input list="languages" id="favLanguage" name="favLanguage">
+  <datalist id="languages">
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Ruby">Ruby</option>
+    <option value="Python">Python</option>
+    <option value="C#">C#</option>
+  </datalist>
+  <br>
+
+  <input type="time" list="popularHours">
+  <datalist id="popularHours">
+    <option value="10:00"></option>
+    <option value="11:00"></option>
+    <option value="12:00"></option>
+  </datalist>
+  <br>
+
+  <label for="tick">Amount</label>
+  <input type="range" name="tick" min="0" max="100" list="tickmarks">
+  <datalist id="tickmarks">
+    <option value="10"></option>
+    <option value="20"></option>
+    <option value="30"></option>
+    <option value="40"></option>
+    <option value="50"></option>
+    <option value="60"></option>
+    <option value="70"></option>
+    <option value="80"></option>
+    <option value="90"></option>
+    <option value="100"></option>
+  </datalist>
+  <br>
+
+  <label for="color">Pick a color</label>
+  <input type="color" list="redColors" name="color">
+  <datalist id="redColors">
+    <option value="#800000"></option>
+    <option value="#900000"></option>
+    <option value="#700000"></option>
+    <option value="#600000"></option>
+  </datalist>
+</body>
+
 </html>
