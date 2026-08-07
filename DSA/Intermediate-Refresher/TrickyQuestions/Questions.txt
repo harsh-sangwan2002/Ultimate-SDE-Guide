@@ -1,0 +1,5 @@
+Intermediate Refresher Questions:
+
+1) Calling main function inside main
+2) Implement Math.round(), Math.ceil(), Math.floor()
+3) Reverse digits of decimal numbers containing decimal points
