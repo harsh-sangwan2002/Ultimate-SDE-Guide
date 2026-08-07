@@ -19,7 +19,8 @@ public class ArrayListMethods {
 
         // set
         // arr.set(5,8); // IndexOutOfBoundsException
-        arr.add(2, 8);
+        // arr.add(5, 8); // IndexOutOfBoundsException
+        arr.add(3, 8);
         arr.add(80);
         System.out.println(arr);
 
