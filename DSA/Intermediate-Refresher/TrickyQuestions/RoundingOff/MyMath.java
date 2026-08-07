@@ -44,7 +44,7 @@ public class MyMath {
         System.out.println(myCeil(-5.2)); // -5
         System.out.println(myCeil(7.0)); // 7
 
-        System.out.println("=========================");
+        System.out.println("========================");
 
         System.out.println(myRound(5.2)); // 5
         System.out.println(myRound(-5.2)); // -5
