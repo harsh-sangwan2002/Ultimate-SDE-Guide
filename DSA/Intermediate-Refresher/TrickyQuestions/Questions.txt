@@ -1,6 +1,8 @@
-Intermediate Refresher Questions:
+Intermediate Refresher Tricky Questions:
 
 1) Calling main function inside main.
 2) Implement Math.round(), Math.ceil(), Math.floor().
 3) Reverse digits of decimal numbers containing decimal points.
 4) Reverse digits of an integer containing trailing zeroes.
+5) Read about strings, stringbuilder, and stringbuffer
+6) Use cases of Arrays, Strings, ArrayList, HashMap, HashSet,...
