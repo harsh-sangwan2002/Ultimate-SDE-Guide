@@ -32,10 +32,17 @@ public class Map {
         System.out.println(map.remove("Bangalore"));
         System.out.println(map);
 
-        // forEach
+        // keySet => forEach
         for (String key : map.keySet()) {
 
             System.out.println(key + " => " + map.get(key));
         }
+
+        for (int value : map.values()) {
+
+            System.out.print(value + " ");
+        }
+
+        System.out.println();
     }
 }

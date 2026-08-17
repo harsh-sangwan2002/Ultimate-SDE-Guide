@@ -29,6 +29,7 @@ public class ArrayListMethods {
 
         // clear
         arr.clear();
+
         System.out.println(arr);
     }
 }

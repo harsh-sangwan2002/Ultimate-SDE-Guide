@@ -1,3 +1,5 @@
+package Strings;
+
 public class ThreadSafety {
 
     public static void main(String[] args) throws Exception {
