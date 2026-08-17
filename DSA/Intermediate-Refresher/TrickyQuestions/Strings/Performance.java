@@ -6,7 +6,7 @@ public class Performance {
 
         int n = 100000;
         // Bad Performance
-        String s1 = "";
+        // String s1 = "";
         StringBuilder s2 = new StringBuilder();
 
         long start = System.currentTimeMillis();
