@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS Sandbox</title>
-  </head>
-  <body>
-    <h1>HTML & CSS Sandbox - Checkboxes & Radio</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Sandbox</title>
+</head>
+
+<body>
+  <h1>HTML & CSS Sandbox - Checkboxes & Radio</h1>
+
+  <h2>Favourite Programming Language</h2>
+  <form>
+    <!-- Checkboxes are used for multiple selection of values -->
+    <label for="html">
+      <input type="checkbox" name="languages" value="html" id="html">HTML
+    </label>
+    <label for="css">
+      <input type="checkbox" name="languages" value="css" id="css">CSS
+    </label>
+    <label for="javascript">
+      <input type="checkbox" name="languages" value="javascript" id="javascript" checked>JavaScript
+    </label>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Product Size</h2>
+  <form>
+    <!-- Radio Buttons are used for single selection of values -->
+    <label for="small">
+      <input type="radio" name="size" id="small" value="small">Small
+    </label>
+    <label for="medium">
+      <input type="radio" name="size" id="medium" value="medium" checked>Medium
+    </label>
+    <label for="large">
+      <input type="radio" name="size" id="large" value="large">Large
+    </label>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+
 </html>

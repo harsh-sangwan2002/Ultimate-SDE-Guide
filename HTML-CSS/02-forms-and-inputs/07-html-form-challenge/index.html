@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS Sandbox</title>
-  </head>
-  <body>
-    <h1>HTML & CSS Sandbox - HTML Form Challenge</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Sandbox</title>
+</head>
+
+<body>
+  <h1>HTML & CSS Sandbox - HTML Form Challenge</h1>
+
+  <header>
+    <h2>Apartment Search</h2>
+  </header>
+
+  <form action="process.php">
+    <div>
+      <label for="location">Location</label>
+      <input type="text" name="location" id="location">
+    </div>
+    <br>
+
+    <div>
+      <label for="price">Monthly Price</label>
+      <input type="number" name="price" id="price">
+    </div>
+    <br>
+
+    <div>
+      <label for="bedrooms">Number of Bedrooms</label>
+      <input type="number" name="bedrooms" id="bedrooms">
+    </div>
+    <br>
+
+    <div>
+      <label for="bathrooms">Number of Bathrooms</label>
+      <input type="number" name="bathrooms" id="bathrooms">
+    </div>
+    <br>
+
+    <div>
+      <label for="petsAllowed">
+        <input type="checkbox" name="petsAllowed" id="petsAllowed">Pets Allowed
+      </label>
+    </div>
+    <br>
+
+    <div>
+      <label for="date">Date Available</label>
+      <input type="date" name="date" id="date">
+    </div>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
 </html>
