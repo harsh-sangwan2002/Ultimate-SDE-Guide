@@ -1,0 +1,50 @@
+html,
+body {
+  font-family: "Arial", sans-serif;
+
+  /* Border is not inherited */
+  border: 3px solid red;
+}
+/* Element Selectors */
+/* h2 {
+  color: red;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+} */
+
+/* Class Selectors */
+.sporty {
+  color: red;
+}
+.casual {
+  color: blue;
+}
+.formal {
+  color: brown;
+}
+
+/* ID Selectors */
+#container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+/* Multiple Selectors */
+.casual,
+.sporty {
+  font-size: 35px;
+}
+
+/* p {
+  background-color: red;
+} */
+
+/* Descendant Selectors */
+#container p {
+  /* background-color: blue; */
+}
