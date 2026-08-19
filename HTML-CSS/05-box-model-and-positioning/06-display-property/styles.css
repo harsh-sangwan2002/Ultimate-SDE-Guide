@@ -1,3 +1,28 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.none-el {
+  display: none;
+}
+.hidden-el {
+  visibility: hidden;
+}
+
+/* p {
+  display: inline;
+}
+a {
+  display: block;
+} */
+
+a {
+  display: inline-block;
+  background-color: lightblue;
+  border: blue solid 1px;
+  margin: 20px 10px;
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  /* height, width, margin-top, and margin-bottom are not applied to the inline-block elements */
+}

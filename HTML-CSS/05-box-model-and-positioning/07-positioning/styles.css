@@ -1,3 +1,50 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.box1 {
+  /* Doesn't do anything it's default */
+  position: static;
+  top: 10px;
+}
+.box2 {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.box3 {
+  /* Taken out of the natural layout */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 2; */
+}
+.box4 {
+  /* relative + fixed */
+  position: sticky;
+  top: 200px;
+}
+.box5 {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: coral;
+}
+.box6 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
