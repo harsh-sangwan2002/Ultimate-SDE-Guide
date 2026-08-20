@@ -1,0 +1,50 @@
+package ClosestMinMax;
+
+// TC => O(N)
+// SC => O(1)
+public class Solution {
+
+    private int[] findMaxMin(int[] A) {
+
+        int max = A[0], min = A[0];
+
+        for (int val : A) {
+            max = Math.max(max, val);
+            min = Math.min(min, val);
+        }
+
+        return new int[] { max, min };
+    }
+
+    public int solve(int[] A) {
+
+        int[] maxMin = findMaxMin(A);
+        int max = maxMin[0], min = maxMin[1];
+
+        if (max == min)
+            return 1;
+
+        int last_min_idx = -1, last_max_idx = -1, n = A.length, ans = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+
+            int val = A[i];
+
+            if (max == val) {
+
+                if (last_min_idx != -1)
+                    ans = Math.min(ans, i - last_min_idx + 1);
+
+                last_max_idx = i;
+            } else if (min == val) {
+
+                if (last_max_idx != -1)
+                    ans = Math.min(ans, i - last_max_idx + 1);
+
+                last_min_idx = i;
+            }
+        }
+
+        return ans;
+    }
+}
