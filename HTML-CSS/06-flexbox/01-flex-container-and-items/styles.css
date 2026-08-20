@@ -1,3 +1,18 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.flex-container {
+  display: flex;
+  background-color: #ccc;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.flex-item {
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  border: 1px solid black;
+}
