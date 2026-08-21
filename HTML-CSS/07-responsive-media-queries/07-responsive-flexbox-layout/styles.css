@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -65,4 +65,20 @@ h2 {
   padding: 10px;
   background: #f4f4f4;
   border-bottom: 1px solid #ccc;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  .main-menu {
+    justify-content: center;
+  }
+
+  .main {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }

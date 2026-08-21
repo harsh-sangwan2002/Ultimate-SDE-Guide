@@ -5,5 +5,14 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: coral;
+  height: 100vh;
+}
+
+.container h1 {
+  font-size: 7vh;
 }
