@@ -1,0 +1,150 @@
+/* Utitlity Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background:
+    linear-gradient(to bottom, rgba(255, 64, 50, 0.8), rgba(71, 17, 116, 0.9)),
+    url("../images/background.jpg") no-repeat center/cover;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.header .logo {
+  width: 100px;
+}
+
+.header-right ul {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header ul li i {
+  margin-right: 10px;
+}
+
+.header ul li:hover {
+  color: rebeccapurple;
+}
+
+/* Main Styling */
+.main-content {
+  max-width: 1100px;
+  margin: 220px auto;
+  display: flex;
+  gap: 15rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.main-content .text-container {
+  flex: 1;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.btn {
+  background-color: #ff4032;
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+}
+
+.text-container h1 {
+  font-size: 50px;
+  margin: 1px 0 20px;
+  line-height: 1.2;
+}
+
+.text-container p {
+  font-size: 18px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 20px;
+  }
+
+  .main-content {
+    margin: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  .main-content form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main-content h1 {
+    font-size: 35px;
+  }
+}
