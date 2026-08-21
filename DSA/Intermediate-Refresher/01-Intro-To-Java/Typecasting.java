@@ -8,7 +8,7 @@ public class Typecasting {
 
         float f = 3.12345678F; // Precision upto 7 decimal places
         double d = 3.1234567891234569; // Precision upto 15 decimal places
-        // System.out.println(f + " " + d);
+        System.out.println(f + " " + d);
 
         // Case:1 Implicit Typecasting
         i = 50;
