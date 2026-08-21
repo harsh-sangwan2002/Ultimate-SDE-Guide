@@ -1,0 +1,40 @@
+name: Deploy Bono Landing Form
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Projects/bono-landing-form/**"
+      - ".github/workflows/deploy-bono.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Bono Landing Form
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "./Projects/bono-landing-form"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
