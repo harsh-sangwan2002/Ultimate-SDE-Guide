@@ -9,7 +9,7 @@ A simple landing page built using **HTML** and **CSS**.
 
 ## Live Demo
 
-[View Website](https://harsh-sangwan2002.github.io/Ultimate-SDE-Guide/)
+[View Website](https://ultimate-sde-guide-phi.vercel.app/)
 
 ## Project Structure
 
