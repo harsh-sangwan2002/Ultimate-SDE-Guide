@@ -1,0 +1,24 @@
+package AP;
+
+import java.util.Arrays;
+
+// TC => O(N*logN)
+// SC => O(1)
+public class Solution {
+
+    public int solve(int[] A) {
+
+        Arrays.sort(A);
+        int n = A.length, diff = A[1] - A[0];
+
+        for (int i = 2; i < n; i++) {
+
+            int currDiff = A[i] - A[i - 1];
+
+            if (diff != currDiff)
+                return 0;
+        }
+
+        return 1;
+    }
+}
