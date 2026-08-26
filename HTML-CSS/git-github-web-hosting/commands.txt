@@ -1,0 +1,20 @@
+1) Set up user name and email
+• git config --global user.name "harsh-sangwan2002"
+• git config --global user.email "hsangwan2002@gmail.com"
+
+2) SSH Keys - Secure Shell is a cryptographic network protocol used to securely connect & communicate
+with remote computers over an unsecured network such as the internet.
+You can use SSH Keys to interact with your github account without entering the password.
+
+3) Generating SSH Keys
+• ssh-keygen -t ed25519 -C "hsangwan2002@gmail.com"
+• .ssh % eval "$(ssh-agent -s)"
+• ssh-add ~/.ssh/github_ssh
+
+4) Git Workflow
+a) Initialize a local repo => git init
+b) Write some code, make changes etc.
+c) Stage your changes => git add.
+d) Commit to local repo => git commit -m "your-message"
+e) Push to remote repo => git push
+f) U means "untracked"
