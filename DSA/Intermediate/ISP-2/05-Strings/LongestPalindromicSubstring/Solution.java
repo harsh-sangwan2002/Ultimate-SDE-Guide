@@ -1,3 +1,5 @@
+package LongestPalindromicSubstring;
+
 // TC => O(N^2)
 // SC => O(N)
 public class Solution {

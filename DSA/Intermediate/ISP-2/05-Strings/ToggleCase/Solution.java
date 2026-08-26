@@ -1,3 +1,5 @@
+package ToggleCase;
+
 // TC => O(N)
 // SC => O(N)
 public class Solution {

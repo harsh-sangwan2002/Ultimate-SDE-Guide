@@ -1,3 +1,5 @@
+package MaximumSubArrayEasy;
+
 // TC => O(N)
 // SC => O(1)
 public class Solution {
