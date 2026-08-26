@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.6;
 }
 
@@ -22,4 +22,48 @@ p {
 input {
   width: 100%;
   padding: 5px;
+}
+
+/* Pseudo Elements */
+p::first-letter {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-right: 2px;
+  color: rebeccapurple;
+}
+
+p::first-line {
+  color: purple;
+  font-weight: 100;
+}
+
+p::selection {
+  color: red;
+  background-color: yellow;
+}
+
+input:required {
+  border-color: red;
+}
+
+input[required] {
+  background-color: rebeccapurple;
+}
+
+input::placeholder {
+  color: green;
+  font-weight: bold;
+}
+
+input::file-selector-button {
+  padding: 1rem;
+  font-weight: bold;
+  color: dodgerblue;
+  background-color: #fff;
+  border: thin solid gray;
+  border-radius: 5px;
+}
+
+li::marker {
+  content: "☞";
 }
