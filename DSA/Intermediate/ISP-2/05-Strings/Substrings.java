@@ -1,3 +1,5 @@
+// TC => O(N^3)
+// SC => O(N)
 public class Substrings {
 
     public static void main(String[] args) {
