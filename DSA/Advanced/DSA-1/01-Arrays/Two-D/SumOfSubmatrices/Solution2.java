@@ -1,44 +1,34 @@
 package SumOfSubmatrices;
 
+// TC => O(N^6)
+// SC => O(1)
 public class Solution2 {
+    public int solve(int[][] A) {
 
-    public static void generateSubMatrix(int[][] arr) {
+        int totalSum = 0, n = A.length;
 
-        int n = arr.length;
-
-        // top row
         for (int top = 0; top < n; top++) {
 
-            // bottom row
             for (int bottom = top; bottom < n; bottom++) {
 
-                // left column
                 for (int left = 0; left < n; left++) {
 
-                    // right column
                     for (int right = left; right < n; right++) {
 
-                        System.out.print("[ ");
+                        int sum = 0;
 
-                        // Generate Sub-Matrix
                         for (int i = top; i <= bottom; i++) {
 
-                            for (int j = left; j <= right; j++) {
-
-                                System.out.print(arr[i][j] + " ");
-                            }
-
-                            System.out.println("]");
+                            for (int j = left; j <= right; j++)
+                                sum += A[i][j];
                         }
+
+                        totalSum += sum;
                     }
                 }
             }
         }
-    }
 
-    public static void main(String[] args) {
-
-        int[][] arr = { { 1, 2 }, { 3, 4 } };
-        generateSubMatrix(arr);
+        return totalSum;
     }
 }
