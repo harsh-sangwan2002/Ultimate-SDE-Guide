@@ -1,0 +1,32 @@
+package MergeOverlappingIntervals;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+// TC => O(N*logN)
+// SC => O(N)
+public class Solution {
+
+    public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+
+        Collections.sort(intervals, (i1, i2) -> i1.start - i2.start);
+        ArrayList<Interval> res = new ArrayList<>();
+        Interval curr = intervals.get(0);
+        res.add(curr);
+
+        for (Interval interval : intervals) {
+
+            if (interval.start <= curr.end) {
+                curr.start = Math.min(curr.start, interval.start);
+                curr.end = Math.max(curr.end, interval.end);
+            }
+
+            else {
+                res.add(interval);
+                curr = interval;
+            }
+        }
+
+        return res;
+    }
+}
