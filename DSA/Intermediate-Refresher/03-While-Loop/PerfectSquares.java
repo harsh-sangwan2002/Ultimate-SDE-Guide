@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class PerfectSquares {
+
+    public static void main(String[] args) {
+
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt(), i = 1;
+
+        while (i * i <= n) {
+            System.out.print(i * i + " ");
+            i++;
+        }
+
+        System.out.println();
+        scn.close();
+    }
+}
