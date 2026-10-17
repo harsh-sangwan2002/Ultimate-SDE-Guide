@@ -1,0 +1,14 @@
+package SumOfDigits;
+
+// TC => O(log(N))
+// SC => O(log(N))
+public class Solution {
+
+    public int solve(int A) {
+
+        if (A / 10 == 0)
+            return A;
+
+        return A % 10 + solve(A / 10);
+    }
+}
