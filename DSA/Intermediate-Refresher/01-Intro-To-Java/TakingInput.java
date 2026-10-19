@@ -29,7 +29,7 @@ public class TakingInput {
 
         boolean bool = scn.nextBoolean();
         System.out.println(bool);
-        
+
         scn.close();
     }
 }
