@@ -1,14 +1,4 @@
-public class Maths {
-
-    public static double ceil(double num) {
-
-        int res = (int) num;
-
-        if (res == num || res < 0)
-            return (double) res;
-
-        return (double) (res + 1);
-    }
+public class MathFunctions {
 
     public static double floor(double num) {
 
@@ -20,7 +10,18 @@ public class Maths {
         return (double) (res - 1);
     }
 
+    public static double ceil(double num) {
+
+        int res = (int) num;
+
+        if (res == num || res < 0)
+            return (double) res;
+
+        return (double) (res + 1);
+    }
+
     public static double round(double num) {
+
         return floor(num + 0.5);
     }
 
@@ -50,4 +51,5 @@ public class Maths {
             System.out.println("--------------------------------");
         }
     }
+
 }
