@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class Reverse {
 
+    public static String reverse(String str) {
+
+        return new StringBuilder(str).reverse().toString();
+    }
+
     public static String reverseInteger(int n) {
 
         StringBuilder sb = new StringBuilder("");
@@ -42,6 +47,9 @@ public class Reverse {
     public static void main(String[] args) {
 
         Scanner scn = new Scanner(System.in);
+
+        String str = scn.next();
+        System.out.println(reverse(str));
 
         int n = scn.nextInt();
         System.out.println(reverseInteger(n));
