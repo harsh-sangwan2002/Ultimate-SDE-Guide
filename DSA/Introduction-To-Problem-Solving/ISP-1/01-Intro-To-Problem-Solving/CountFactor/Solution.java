@@ -1,3 +1,5 @@
+package CountFactor;
+
 // TC => O(sqrt(N))
 // SC => O(1)
 public class Solution {
