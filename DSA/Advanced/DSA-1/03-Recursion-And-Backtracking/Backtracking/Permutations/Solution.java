@@ -1,7 +1,7 @@
 package Permutations;
 
 // TC => O(N*N!)
-// SC => O(N)
+// SC => O(N*N!)
 public class Solution {
 
     int[][] res;

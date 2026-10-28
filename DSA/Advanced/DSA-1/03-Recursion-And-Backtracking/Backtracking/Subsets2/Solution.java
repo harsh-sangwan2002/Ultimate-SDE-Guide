@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// TC => O(2^n)
-// SC => O(N)
+// TC => O(N*2^n)
+// SC => O(N*2^n)
 public class Solution {
 
     private void helper(int[] A, int idx, List<Integer> curr, List<List<Integer>> res) {

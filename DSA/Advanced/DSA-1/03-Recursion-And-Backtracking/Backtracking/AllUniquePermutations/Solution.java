@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // TC => O(N*N!)
-// SC => O(N!)
+// SC => O(N*N!)
 public class Solution {
 
     private void helper(int[] arr, List<Integer> curr, List<List<Integer>> res, boolean[] vis) {
