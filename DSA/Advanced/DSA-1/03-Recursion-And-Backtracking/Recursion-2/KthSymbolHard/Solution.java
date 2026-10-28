@@ -1,7 +1,7 @@
 package KthSymbolHard;
 
-// TC => O(log(B))
-// SC => O(log(B))
+// TC => O(A)
+// SC => O(A)
 public class Solution {
 
     public int solve(int A, long B) {
