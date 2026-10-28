@@ -1,4 +1,4 @@
-package RowWithMaxOne;
+package RowWithMaxOnes;
 
 // TC => O(N)
 // SC => O(1)
